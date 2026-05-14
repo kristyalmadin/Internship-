@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="src/style..css" >
+
+    <!-- <link rel="stylesheet" href="src/style..css" > -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
 
 </head>
 
-<body>
+<body class="bg-warning-subtle">
     <!-- navigation or menu-->
-     <header>
+    <header>
         <nav>
             <ul>
                 <li> <a href="#">Kristy</a></li>
@@ -24,11 +26,11 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main >
         <!-- hero section or banner -->
-        <section class="hero" >
+        <section class="hero ">
             <div>
-                <img src="images/kristy.jpg" alt="kristy" height="500">
+                <img src="images/kristy.jpg" class="object-fit-xl-contain border rounded" alt="kristy">
                 <h1>KRISTY</h1>
                 <hr>
                 <p> How Kristy Romanticizes Life Through Different Colors</p>
@@ -36,110 +38,192 @@
                     <a>Explore</a>
                 </button>
             </div>
+
+            <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/kristy.jpg" class="img-fluid object-fit-xl-contain border rounded" alt="kristy" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture1.jpg" alt="kristy" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture2.jpg" alt="kristy" height="500">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> -->
         </section>
 
         <!--My vlog  -->
-        <section class="vlog">
+        <section class="container vlog">
             <h2>MY VLOG</h2>
             <video height="500" controls autoplay>
                 <source src="videos/kristy.mp4" type="video/mp4">
             </video>
 
-            <div class="myvlog">
-                <div>
-                    <img src="images/picture1.jpg" alt="kristy" height="200">
-                    <figcaption>Candlelight Glow</figcaption>
-                </div>
+            <div class="row">
+                <figure class="col-md-3">
+                    <div class="card">
+                        <img src="images/picture1.jpg" alt="kristy" height="200">
+                        <figcaption class="card-body">Candlelight Glow</figcaption>
+                    </div>
+                </figure>
+                <!-- <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        </div>
+                    </div> -->
 
-                <div>
-                    <video height="200" controls autoplay>
-                        <source src="videos/video1.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Golden Hour Hues</figcaption>
-                </div>
 
-                <div>
-                    <img src="images/picture2.jpg" alt="kristy" height="200">
-                    <figcaption>Soft Light Views</figcaption>
-                </div>
+                <figure class="col-md-3">
+                    <div class="card">
 
-                <div>
-                    <video height="200" controls autoplay>
-                        <source src="videos/video2.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Eighteen Wishes</figcaption>
-                </div>
+                        <video height="200" controls autoplay>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="card-body">Golden Hour Hues</figcaption>
+                    </div>
+                </figure>
 
-                <button type="button" class="btn-more">For More Videos</button>
+
+                <figure class="col-md-3">
+                    <div class="card">
+
+                        <img src="images/picture2.jpg" alt="kristy" height="200">
+                        <figcaption class="card-body">Soft Light Views</figcaption>
+                    </div>
+                </figure>
+
+                <figure class="col-md-3">
+                    <div class="card">
+                        <video height="200" controls autoplay>
+                            <source src="videos/video2.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="card-body">Eighteen Wishes</figcaption>
+                    </div>
+                </figure>
+            </div>
+
+            <button type="button" class="btn-more">For More Videos</button>
             </div>
         </section>
 
         <!-- This is my story -->
-        <section class="story">
-            <div>
-                <article>
-                    <h2>THIS IS MY STORY</h2>
-                    <p>Kristianne is a fresh senior high school graduate from the STEM strand with aspirations of
-                        pursuing a
-                        degree in Medical Technology. She is currently undergoing and internship at the Department of
-                        Agriculture, where she is assigned at the ICT unit. Although she is new to the field of
-                        information
-                        and communication technology, she remains eager to learn, adapt, and grow. She tries her best to
-                        approach every task with curiosity and determination, and she is genuinely enjoying her
-                        experience
-                        as she expands her skills beyond her academic background.
-                    </p>
-                </article>
-                <button type="button">Follow Me</button>
+        <section class="cotainer story my-5">
+            <div class="row align-ites-center">
+
+                <div class="col-md-6">
+                    <article>
+                        <h2>THIS IS MY STORY</h2>
+                        <p>Kristianne is a fresh senior high school graduate from the STEM strand with aspirations of
+                            pursuing a
+                            degree in Medical Technology. She is currently undergoing and internship at the Department
+                            of
+                            Agriculture, where she is assigned at the ICT unit. Although she is new to the field of
+                            information
+                            and communication technology, she remains eager to learn, adapt, and grow. She tries her
+                            best to
+                            approach every task with curiosity and determination, and she is genuinely enjoying her
+                            experience
+                            as she expands her skills beyond her academic background.
+                        </p>
+                    </article>
+                </div>
+                <button class="btn bg-warning">Follow Me</button>
             </div>
 
-            <div>
-                <img src="images/gradpic.jpg" at="kristy" height="500">
+            <div class="col-md-6 text-center">
+                <img src="images/gradpic.jpg" class="img-fluid shadow  mb-5 bg-body-tertiary rounded">
             </div>
         </section>
 
-        <!-- Album -->
-        <section class="insta">
+        <!-- Album KRISTY ON INSTA -->
+        <section class="container insta ">
             <h1>KRISTY ON INSTA</h1>
-            <div class="container">
-                <figure>
-                    <img src="images/coffee.jpg" at="kristy" height="200">
-                    <figcaption>Sweet sips, cozy nights</figcaption>
-                </figure>
+            <div class="row">
 
-                <figure>
+                
+
+                    <figure class="align-ites-center">
+                        <div class="card">
+                        <img src="images/coffee.jpg" at="kristy" height="200">
+                        <figcaption class="card-body">Sweet sips, cozy nights</figcaption>
+                   </div>
+                    </figure>
+              
+                <!-- 
+bootstrap class
+md = medium
+sm = small
+lg =
+
+
+color for text-primary
+backgroud = bg-success
+
+card
+card-body
+
+btn-success
+border
+shadow-lg
+-->
+                <figure class="col-md-3">
+                    <div class="card">
                     <img src="images/certificates.jpg" at="kristy" height="200">
-                    <figcaption>Golden glow, festival flow</figcaption>
+                    <figcaption class="card-body">Golden glow, festival flow</figcaption>
+               </div>
                 </figure>
 
-                <figure>
+                <figure class="col-3">
+                    <div class="card">
                     <img src="images/cparday.jpg" at="kisty" height="200">
-                    <figcaption>Laughing loud, happy crowd</figcaption>
+                    <figcaption class="card-body">Laughing loud, happy crowd</figcaption>
+              </div>
                 </figure>
 
-                <figure>
+                <figure class="col-3">
+                    <div class="card">
                     <img src="images/outing.jpg" at="kristy" height="200">
-                    <figcaption>Shades on, night goes on</figcaption>
+                    <figcaption class="card-body">Shades on, night goes on</figcaption>
+                </div>
                 </figure>
 
-                <figure>
+                <figure class="col-4">
+                    <div class="card">
                     <img src="images/safeplace.jpg" at="kristy" height="200">
-                    <figcaption>Chill and cheer, frends are near</figcaption>
+                    <figcaption class="card-body">Chill and cheer, frends are near</figcaption>
+                </div>
                 </figure>
 
-                <figure>
+                <figure class="col-4">
+                    <div class="card">
                     <img src="images/swing.jpg" at="kristy" height="200">
-                    <figcaption>Moments still, memories fill</figcaption>
+                    <figcaption class="card-body">Moments still, memories fill</figcaption>
+               </div>
                 </figure>
 
-                <figure>
+                <figure class="col-4">
+                    <div class="card">
                     <img src="images/outofthewoods.jpg" at="kristy" height="200">
-                    <figcaption>Walk in line, bonds that shine</figcaption>
+                    <figcaption class="card-body">Walk in line, bonds that shine</figcaption>
+               </div>
                 </figure>
             </div>
         </section>
 
-        <section class="colors" >
+        <section class="colors">
             <h1>KRISTY'S LIFE IN COLORS</h1>
             <div>
                 <video height="500" controls autoplay>
@@ -162,16 +246,17 @@
             </div>
         </section>
 
-    </section>
+        </section>
 
-    <section class="first">
-        <h1>WITNESS A DAY IN HER LIFE</h1>
-    <div>
+        <section class="first">
+            <h1>WITNESS A DAY IN HER LIFE</h1>
+            <div>
                 <video height="500" controls autoplay>
                     <source src="videos/first.mp4" type="video/mp4">
                 </video>
-                <figcaption>Where everything felt a little lighter, like the world softened its edges for a while.</figcaption>
-    </section>
+                <figcaption>Where everything felt a little lighter, like the world softened its edges for a while.
+                </figcaption>
+        </section>
 
 
     </main>
@@ -232,5 +317,8 @@
     </footer>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 </html>
